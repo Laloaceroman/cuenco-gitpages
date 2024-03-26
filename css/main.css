@@ -2919,6 +2919,9 @@ header.header--static .header__logo.header__logo--white {
     height: 70px;
     line-height: 70px;
   }
+  header .header__secondary {
+    display: block;
+  }
   header .header__inner {
     height: 70px;
     line-height: 70px;
