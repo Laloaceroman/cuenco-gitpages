@@ -419,11 +419,9 @@ app.loader = {
 
 app.modal = {
   init: function() {
-    $("[data-modal-login]").click(function(e) {
+    $("[data-modal-newsletter]").click(function(e) {
       e.preventDefault();
-      app.modal.open(".modal--login");
-      $(".modal--resetpass").removeClass("modal--in");
-      return $(".modal--register").removeClass("modal--in");
+      return app.modal.open(".modal--newsletter");
     });
     $(".modal__close").click(function() {
       return app.modal.close($(this).closest(".modal"));
@@ -610,7 +608,8 @@ app.swiper = {
       loop: true,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true
+        clickable: true,
+        dynamicBullets: true
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -624,12 +623,12 @@ app.swiper = {
         },
         900: {
           slidesPerView: 2,
-          spaceBetween: 10,
+          spaceBetween: 40,
           slidesPerGroup: 2
         },
         1400: {
           slidesPerView: 3,
-          spaceBetween: 10,
+          spaceBetween: 40,
           slidesPerGroup: 2
         }
       }

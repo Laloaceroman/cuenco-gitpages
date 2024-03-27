@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=11983" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=11983" type="text/javascript"></script>
+    <link href="css/main.css?v=49172" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=49172" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -26,7 +26,7 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-periodistas.png"></a></div>
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-cuenco.png"></a></div>
             <div class="header__search">
               <form action="catalog.html" method="get"></form><span class="fa fa-search"></span>
               <input type="text" name="s" placeholder="Buscar...">
@@ -43,7 +43,7 @@
               <div class="header__nav__opacity"> </div>
               <div class="header__nav__nav"> 
                 <div class="header__nav__nav__header"> 
-                  <div class="header__nav__isotipo"> <img src="img/icons/logo-resit-blue.png"></div>
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-cuenco.png"></div>
                   <div class="header__nav__close">
                     <div></div>
                     <div></div>
@@ -62,7 +62,7 @@
                       <li><a href="methodology.html">Metodología</a></li>
                       <li><a href="aboutus.html">Sobre nosotros</a></li>
                       <li><a data-modal-newsletter>Newsletter</a></li>
-                      <li><a href="contact.html">Contacto</a></li>
+                      <li><a data-goto="footer">Contacto</a></li>
                     </ul>
                   </div>
                 </div>
@@ -94,7 +94,7 @@
                       <li><a href="methodology.html">Metodología</a></li>
                       <li><a href="aboutus.html">Sobre nosotros</a></li>
                       <li><a data-modal-newsletter>Newsletter</a></li>
-                      <li><a href="contact.html">Contacto</a></li>
+                      <li><a data-goto="footer">Contacto</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -273,6 +273,55 @@
           </div>
         </div>
       </section>
+      <div class="modal modal--newsletter">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__content"> 
+              <div class="cols">
+                <div class="modal__flex">
+                  <div class="col-md-7">
+                    <div class="modal__newsletter"> 
+                      <h4 class="modal__title">Suscríbete gratis al newsletter y recibe <strong>increíbles oportunidades</strong></h4>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="modal__features"> 
+                      <div class="modal__feature"> 
+                        <div class="modal__icon"> <img src="img/icons/icon-check-footer.svg"></div>
+                        <p>Oportunidades de financiamiento</p>
+                      </div>
+                      <div class="modal__feature"> 
+                        <div class="modal__icon"> <img src="img/icons/icon-check-footer.svg"></div>
+                        <p>Explicativos</p>
+                      </div>
+                      <div class="modal__feature"> 
+                        <div class="modal__icon"> <img src="img/icons/icon-check-footer.svg"></div>
+                        <p>Resumen semanal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="modal__form">
+                    <form class="form">
+                      <div class="form__element"> 
+                        <div class="form__input"> 
+                          <input type="text" placeholder="Ingrese su correo electrónico ...">
+                          <div class="form__button"> 
+                            <button>Suscribírme</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="footer__wrap"> 
@@ -280,6 +329,7 @@
           <div class="cols">
             <div class="footer__flex">
               <div class="col-md-8">
+                <div class="footer__logo"> <img src="img/icons/logo-cuenco.png"></div>
                 <div class="footer__newsletter"> 
                   <h4 class="footer__title">Suscríbete gratis al newsletter y recibe <strong>increíbles oportunidades</strong></h4>
                   <form class="form">
@@ -314,43 +364,47 @@
           </div>
         </div>
         <div class="footer__body">
-          <div class="cols"> 
-            <div class="col-md-4">
-              <div class="footer__socials"> 
-                <div class="footer__social"> <a href="#"><img src="img/icons/icon-facebook-white.svg"></a></div>
-                <div class="footer__social"> <a href="#"><img src="img/icons/icon-tiktok-white.svg"></a></div>
-                <div class="footer__social"> <a href="#"><img src="img/icons/icon-instagram-white.svg"></a></div>
-                <div class="footer__social"> <a href="#"><img src="img/icons/icon-x-white.svg"></a></div>
-                <div class="footer__social"> <a href="#"><img src="img/icons/icon-linkedin-white.svg"></a></div>
-                <div class="footer__social"> <a href="#"><img src="img/icons/icon-youtube-white.svg"></a></div>
-                <div class="footer__social"> <a href="#"><img src="img/icons/icon-spotify-white.svg"></a></div>
+          <div class="cols">
+            <div class="footer__flex">
+              <div class="col-md-4">
+                <div class="footer__socials"> 
+                  <div class="footer__social"> <a href="#"><img src="img/icons/icon-facebook-white.svg"></a></div>
+                  <div class="footer__social"> <a href="#"><img src="img/icons/icon-tiktok-white.svg"></a></div>
+                  <div class="footer__social"> <a href="#"><img src="img/icons/icon-instagram-white.svg"></a></div>
+                  <div class="footer__social"> <a href="#"><img src="img/icons/icon-x-white.svg"></a></div>
+                  <div class="footer__social"> <a href="#"><img src="img/icons/icon-linkedin-white.svg"></a></div>
+                  <div class="footer__social"> <a href="#"><img src="img/icons/icon-youtube-white.svg"></a></div>
+                  <div class="footer__social"> <a href="#"><img src="img/icons/icon-spotify-white.svg"></a></div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="footer__info">
-                <h5>Contacto</h5><a href="#">contacto@cuenco.cl</a>
-                <p>+56 (9) 3037 3734 | +56 (9) 72056291</p>
-                <p>Alonso de Ribera 2084, Concepción</p>
+              <div class="col-md-4">
+                <div class="footer__info">
+                  <h4 class="footer__title">Contacto</h4><a href="#">contacto@cuenco.cl</a>
+                  <p>+56 (9) 3037 3734 | +56 (9) 72056291</p>
+                  <p>Alonso de Ribera 2084, Concepción</p>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="footer__info">
-                <h5>Legales</h5><a href="#">Términos y condiciones</a><a href="#">Políticas de privacidad</a><a href="#">Avisos legales</a>
+              <div class="col-md-4">
+                <div class="footer__info">
+                  <h4 class="footer__title">Legales</h4><a href="#">Términos y condiciones</a><a href="#">Políticas de privacidad</a><a href="#">Avisos legales</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="footer__footer">
-          <div class="cols"> 
-            <div class="col-md-8">
-              <div class="footer__logos"> 
-                <div class="footer__logo"> <img src="img/icons/logo-footer-1.svg"></div>
-                <div class="footer__logo"> <img src="img/icons/logo-footer-2.svg"></div>
+          <div class="cols">
+            <div class="footer__flex">
+              <div class="col-md-8">
+                <div class="footer__logos"> 
+                  <div class="footer__logo"> <img src="img/icons/logo-footer-1.png"></div>
+                  <div class="footer__logo"> <img src="img/icons/logo-footer-2.png"></div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="footer__copyright">
-                <p>Copyright. Cuenco Comunicaciones SpA. 2024.</p>
+              <div class="col-md-4">
+                <div class="footer__copyright">
+                  <p>Copyright. Cuenco Comunicaciones SpA. 2024.</p>
+                </div>
               </div>
             </div>
           </div>
