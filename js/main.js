@@ -603,13 +603,116 @@ app.scroll = {
 
 app.swiper = {
   init: function() {
-    var swiper;
-    return swiper = new Swiper('.swiper-testimonies', {
+    var swiper, swiper2, swiper3, swiper4;
+    swiper = new Swiper('.swiper-testimonies', {
       loop: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          slidesPerGroup: 1
+        },
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+          slidesPerGroup: 2
+        },
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+          slidesPerGroup: 2
+        }
+      }
+    });
+    swiper2 = new Swiper('.swiper-news', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          slidesPerGroup: 1
+        },
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+          slidesPerGroup: 2
+        },
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+          slidesPerGroup: 2
+        }
+      }
+    });
+    swiper3 = new Swiper('.swiper-investigation', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          slidesPerGroup: 1
+        },
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+          slidesPerGroup: 2
+        },
+        1400: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+          slidesPerGroup: 2
+        }
+      }
+    });
+    return swiper4 = new Swiper('.swiper-columns', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
       },
       navigation: {
         nextEl: '.swiper-button-next',

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=25002" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=25002" type="text/javascript"></script>
+    <link href="css/main.css?v=77702" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=77702" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -30,6 +30,7 @@
             <div class="header__search">
               <form action="catalog.html" method="get"></form><span class="fa fa-search"></span>
               <input type="text" name="s" placeholder="Buscar...">
+              <div class="header__search__close"> <span class="fa fa-close"></span></div>
             </div>
             <div class="header__right">
               <div class="header__item header__item--search">
@@ -110,10 +111,13 @@
           <div class="section__body">
             <div class="cols">
               <div class="section__flex">
-                <div class="col-md-5">
+                <div class="col-md-7 col-md-push-5"> 
+                  <div class="section__image"> <img src="img/uploads/1.jpeg"></div>
+                </div>
+                <div class="col-md-5 col-md-pull-7">
                   <div class="section__content">
                     <h1 class="section__title">Comunicamos y ayudamos a comunicar sobre <strong>agua</strong> en simple</h1>
-                    <div class="section__buttons"><a href="#" class="btn btn--white">Servicios</a><a href="#" class="btn btn--transparent">Metodología</a></div>
+                    <div class="section__buttons"><a href="#" class="btn btn--transparent">Servicios</a><a href="#" class="btn btn--transparent">Metodología</a></div>
                     <div class="section__socials"> 
                       <div class="section__social"> <a href="#"><img src="img/icons/icon-facebook-white.svg"></a></div>
                       <div class="section__social"> <a href="#"><img src="img/icons/icon-tiktok-white.svg"></a></div>
@@ -125,9 +129,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-7"> 
-                  <div class="section__image"> <img src="img/uploads/0.jpeg"></div>
-                </div>
               </div>
             </div>
           </div>
@@ -138,7 +139,7 @@
           <div class="section__body"> 
             <div class="section__news"> 
               <div class="cols cols-gutter-2"> 
-                <div class="col-md-12 dscroll">
+                <div class="col-md-12">
                   <article class="article--new article--new--big"> 
                     <div class="article__image">
                       <div class="article__bg">
@@ -154,7 +155,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-md-4 dscroll"> 
+                <div class="col-md-4"> 
                   <article class="article--new">
                     <div class="article__bg"> 
                       <div class="bg"> <img src="img/uploads/2.jpeg"></div>
@@ -164,7 +165,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-md-4 dscroll"> 
+                <div class="col-md-4"> 
                   <article class="article--new">
                     <div class="article__bg"> 
                       <div class="bg"> <img src="img/uploads/3.jpeg"></div>
@@ -174,7 +175,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-md-4 dscroll"> 
+                <div class="col-md-4"> 
                   <article class="article--new">
                     <div class="article__bg"> 
                       <div class="bg"> <img src="img/uploads/4.jpeg"></div>
@@ -193,32 +194,37 @@
         <div class="section__wrap section__wrap--sm">
           <div class="section__body"> 
             <div class="section__columns"> 
-              <div class="cols cols-gutter-2"> 
-                <div class="col-md-4 dscroll">
-                  <article class="article--column">
-                    <div class="article__icon"> <img src="img/icons/icon-comillas-circle.svg"></div>
-                    <div class="article__body"> 
-                      <h3 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h3><span class="article__name">Álvaro Molina Jara</span>
+              <div class="section__wrapper">
+                <div class="swiper-container swiper-columns">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <article class="article--column">
+                        <div class="article__icon"> <img src="img/icons/icon-comillas-circle.svg"></div>
+                        <div class="article__body"> 
+                          <h3 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h3><a href="#" class="article__name">Álvaro Molina Jara</a>
+                        </div>
+                      </article>
                     </div>
-                  </article>
-                </div>
-                <div class="col-md-4 dscroll">
-                  <article class="article--column">
-                    <div class="article__icon"> <img src="img/icons/icon-comillas-circle.svg"></div>
-                    <div class="article__body"> 
-                      <h3 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h3><span class="article__name">Álvaro Molina Jara</span>
+                    <div class="swiper-slide">
+                      <article class="article--column">
+                        <div class="article__icon"> <img src="img/icons/icon-comillas-circle.svg"></div>
+                        <div class="article__body"> 
+                          <h3 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h3><a href="#" class="article__name">Álvaro Molina Jara</a>
+                        </div>
+                      </article>
                     </div>
-                  </article>
-                </div>
-                <div class="col-md-4 dscroll">
-                  <article class="article--column">
-                    <div class="article__icon"> <img src="img/icons/icon-comillas-circle.svg"></div>
-                    <div class="article__body"> 
-                      <h3 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h3><span class="article__name">Álvaro Molina Jara</span>
+                    <div class="swiper-slide">
+                      <article class="article--column">
+                        <div class="article__icon"> <img src="img/icons/icon-comillas-circle.svg"></div>
+                        <div class="article__body"> 
+                          <h3 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h3><a href="#" class="article__name">Álvaro Molina Jara</a>
+                        </div>
+                      </article>
                     </div>
-                  </article>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -236,7 +242,7 @@
           <div class="section__body"> 
             <div class="section__news"> 
               <div class="cols cols-gutter-2"> 
-                <div class="col-md-4 dscroll"> 
+                <div class="col-md-4"> 
                   <article class="article--new">
                     <div class="article__bg"> 
                       <div class="bg"> <img src="img/uploads/2.jpeg"></div>
@@ -246,7 +252,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-md-4 dscroll"> 
+                <div class="col-md-4"> 
                   <article class="article--new">
                     <div class="article__bg"> 
                       <div class="bg"> <img src="img/uploads/3.jpeg"></div>
@@ -256,7 +262,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-md-4 dscroll"> 
+                <div class="col-md-4"> 
                   <article class="article--new">
                     <div class="article__bg"> 
                       <div class="bg"> <img src="img/uploads/4.jpeg"></div>
@@ -283,38 +289,103 @@
           </div>
           <div class="section__body"> 
             <div class="section__news"> 
-              <div class="cols cols-gutter-2"> 
-                <div class="col-md-4 dscroll"> 
-                  <article class="article--new">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+              <div class="section__wrapper">
+                <div class="swiper-container swiper-investigation">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                    <div class="article__body"> 
-                      <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                  </article>
-                </div>
-                <div class="col-md-4 dscroll"> 
-                  <article class="article--new">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                    <div class="article__body"> 
-                      <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                  </article>
-                </div>
-                <div class="col-md-4 dscroll"> 
-                  <article class="article--new">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                    <div class="article__body"> 
-                      <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                  </article>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -325,7 +396,7 @@
             <div class="section__bar">
               <div class="section__icon"> <img src="img/icons/icon-circle-water.svg"></div>
               <div class="section__bar__text">
-                <p>Servicios</p>
+                <p><strong>Servicios</strong></p>
               </div>
             </div>
           </div>
@@ -397,44 +468,109 @@
             <div class="section__bar">
               <div class="section__icon"> <img src="img/icons/icon-circle-paper.svg"></div>
               <div class="section__bar__text">
-                <p>Prensa</p>
+                <p><strong>Prensa</strong></p>
               </div>
             </div>
           </div>
           <div class="section__body"> 
             <div class="section__news"> 
-              <div class="cols">
-                <div class="col-md-4 dscroll"> 
-                  <article class="article--new">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+              <div class="section__wrapper">
+                <div class="swiper-container swiper-news">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide dscroll"> 
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                    <div class="article__body"> 
-                      <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                    <div class="swiper-slide dscroll">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                  </article>
-                </div>
-                <div class="col-md-4 dscroll"> 
-                  <article class="article--new">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                    <div class="swiper-slide dscroll">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                    <div class="article__body"> 
-                      <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                    <div class="swiper-slide dscroll"> 
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                  </article>
-                </div>
-                <div class="col-md-4 dscroll"> 
-                  <article class="article--new">
-                    <div class="article__bg"> 
-                      <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                    <div class="swiper-slide dscroll">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                    <div class="article__body"> 
-                      <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                    <div class="swiper-slide dscroll">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
                     </div>
-                  </article>
+                    <div class="swiper-slide dscroll"> 
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide dscroll">
+                      <article class="article--new">
+                        <div class="article__bg"> 
+                          <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                        </div>
+                        <div class="article__body"> 
+                          <h4 class="article__title"><a href="single-new.html">La innovadora solución a la escasez de agua en Rere: 50 mil litros más en alta temporada</a></h4><span class="article__date">15 de enero, 2024</span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -445,7 +581,7 @@
             <div class="section__bar">
               <div class="section__icon"> <img src="img/icons/icon-circle-comillas.svg"></div>
               <div class="section__bar__text">
-                <p>Qué dicen de nosotros</p>
+                <p><strong>Qué dicen de nosotros</strong></p>
               </div>
             </div>
           </div>
@@ -597,13 +733,13 @@
               <div class="col-md-8">
                 <div class="footer__logo"> <img src="img/icons/logo-cuenco.png"></div>
                 <div class="footer__newsletter"> 
-                  <h4 class="footer__title">Suscríbete gratis al newsletter y recibe <strong>increíbles oportunidades</strong></h4>
+                  <h4 class="footer__title">Suscríbete gratis al <span>newsletter</span> y recibe <strong>increíbles oportunidades</strong></h4>
                   <form class="form">
                     <div class="form__element"> 
                       <div class="form__input"> 
-                        <input type="text" placeholder="Ingrese su correo electrónico ...">
+                        <input type="text" placeholder="Ingrese su correo electrónico...">
                         <div class="form__button"> 
-                          <button>Suscribírme</button>
+                          <button>Suscribirme</button>
                         </div>
                       </div>
                     </div>
@@ -618,7 +754,7 @@
                   </div>
                   <div class="footer__feature"> 
                     <div class="footer__icon"> <img src="img/icons/icon-check-footer.svg"></div>
-                    <p>Explicativos</p>
+                    <p>Productos y servicios de interés</p>
                   </div>
                   <div class="footer__feature"> 
                     <div class="footer__icon"> <img src="img/icons/icon-check-footer.svg"></div>
@@ -632,7 +768,7 @@
         <div class="footer__body">
           <div class="cols">
             <div class="footer__flex">
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <div class="footer__socials"> 
                   <div class="footer__social"> <a href="#"><img src="img/icons/icon-facebook-white.svg"></a></div>
                   <div class="footer__social"> <a href="#"><img src="img/icons/icon-tiktok-white.svg"></a></div>
@@ -643,14 +779,14 @@
                   <div class="footer__social"> <a href="#"><img src="img/icons/icon-spotify-white.svg"></a></div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="footer__info">
                   <h4 class="footer__title">Contacto</h4><a href="#">contacto@cuenco.cl</a>
-                  <p>+56 (9) 3037 3734 | +56 (9) 72056291</p>
-                  <p>Alonso de Ribera 2084, Concepción</p>
+                  <p>+56 (9) 3037 3734</p>
+                  <p>Concepción, Chile</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="footer__info">
                   <h4 class="footer__title">Legales</h4><a href="#">Términos y condiciones</a><a href="#">Políticas de privacidad</a><a href="#">Avisos legales</a>
                 </div>
