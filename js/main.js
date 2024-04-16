@@ -257,7 +257,7 @@ app.header = {
       $('.header__ham').on('click', function(e) {
         return app.header.nav.toggle();
       });
-      $(".header__nav__close, .header__nav__bg").on('click', function() {
+      $(".header__nav__close, .header__nav__opacity").on('click', function() {
         return app.header.nav.out();
       });
       $(".header__nav__nav li").each(function() {
