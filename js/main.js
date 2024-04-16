@@ -213,9 +213,6 @@ app.header = {
     return app.header.search.init();
   },
   events: function() {
-    $("header").on("mouseenter", function(e) {
-      return $("header").addClass("header--hover");
-    });
     return $("header").on("mouseleave", function(e) {
       $("header").removeClass("header--hover");
       $("header").removeClass("header--search-in header--search-out");
