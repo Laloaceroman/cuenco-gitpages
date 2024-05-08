@@ -340,7 +340,6 @@ svg {
   .cols.cols-gutter-2>div {
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 20px;
   }
   .cols.cols-gutter-2:last-child {
     margin-bottom: -20px;
@@ -1721,10 +1720,6 @@ article.article--column a:after {
   content: "";
   display: none;
 }
-article.article--column:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
 article.article--column:after {
   content: "";
   position: absolute;
@@ -1822,12 +1817,14 @@ article.article--service .article__body .article__title {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 article.article--service .article__body .article__number {
   font-size: 42px;
   line-height: 48px;
   font-weight: bold;
   color: rgba(0,0,0,0.6);
+  font-family: 'Montserrat', sans-serif;
 }
 article.article--service .article__body .article__icon {
   position: absolute;
@@ -1864,10 +1861,6 @@ article.article--service .article__text p {
 }
 article.article--testimony {
   border: 1px solid #bcbcbb;
-}
-article.article--testimony:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
 }
 article.article--testimony .article__avatar {
   width: 120px;
@@ -1951,7 +1944,7 @@ article.article--people .article__body {
   height: 100%;
   background: center center no-repeat;
   background-size: cover;
-  opacity: 0;
+  opacity: 1;
   display: block;
 }
 .bg.bg-loaded {
@@ -2167,11 +2160,13 @@ footer {
   position: relative;
   color: #fff;
   background: #383838;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
+}
+footer .footer__title {
+  font-family: 'Montserrat', sans-serif !important;
 }
 footer .footer__title {
   font-weight: bold;
-  font-family: 'Martel Sans', sans-serif;
 }
 footer .footer__title span {
   font-style: italic;
@@ -3369,6 +3364,30 @@ header.header--nav-out .header__nav__mobile .header__nav__nav {
     stroke-dashoffset: -125px;
   }
 }
+.loadmore {
+  display: none;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.loadmore:before,
+.loadmore:after {
+  content: " ";
+  display: table;
+}
+.loadmore:after {
+  clear: both;
+}
+.loadmore>div {
+  margin-bottom: 10px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+.loadmore:last-child {
+  margin-bottom: -10px;
+}
+.loadmore.loadmore--show {
+  display: block;
+}
 .modal {
   position: fixed;
   top: 0;
@@ -3983,30 +4002,6 @@ section.section--main {
     margin-top: 140px;
   }
 }
-section.section--main:after {
-  content: "";
-  width: 500px;
-  height: 500px;
-  line-height: 500px;
-  text-align: center;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: rgba(255,255,255,0.3);
-  position: absolute;
-  bottom: -155px;
-  right: -50px;
-  z-index: 1;
-}
-@media (min-width: 720px) {
-  section.section--main:after {
-    width: 500px;
-    height: 500px;
-    line-height: 500px;
-    text-align: center;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-}
 section.section--main .section__wrap {
   z-index: 2;
 }
@@ -4038,7 +4033,6 @@ section.section--main .section__body .section__content .section__title strong {
 section.section--main .section__body .section__buttons {
   padding-top: 50px;
   margin-top: 50px;
-  border-top: 1px solid #fff;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -4046,6 +4040,11 @@ section.section--main .section__body .section__buttons {
   -ms-flex-align: center;
       align-items: center;
   margin-bottom: 50px;
+}
+@media (min-width: 720px) {
+  section.section--main .section__body .section__buttons {
+    border-top: 1px solid #fff;
+  }
 }
 section.section--main .section__body .section__buttons .btn {
   max-width: 100%;
@@ -4112,11 +4111,48 @@ section.section--news .section__header .section__bar .section__bar__text p {
 section.section--news .section__header .section__bar .section__bar__text p strong {
   color: #383838;
 }
-section.section--news .section__footer {
-  margin-top: 40px;
+section.section--news .section__header .section__bar .section__bar__options {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #f5f5f7;
+  color: #bcbcbb;
+  width: 100%;
+  font-family: 'Martel Sans', sans-serif;
 }
-section.section--news .section__footer .section__button {
+section.section--news .section__header .section__bar .section__bar__options span {
+  margin-right: 10px;
+}
+section.section--news .section__header .section__bar .section__bar__options .section__bar__option {
+  margin-right: 10px;
+  cursor: pointer;
+}
+section.section--news .section__header .section__bar .section__bar__options .section__bar__option.current p {
+  color: #383838;
+}
+section.section--news .section__header .section__bar .section__bar__options .section__bar__option p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #bcbcbb;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+section.section--news .section__header .section__bar .section__bar__options .section__bar__option p strong {
+  color: #383838;
+}
+section.section--news .section__loadmore {
+  padding: 40px 0;
   text-align: center;
+}
+section.section--news.section--news--home .section__news {
+  display: none;
+}
+section.section--news.section--news--home .section__news.current {
+  display: block;
 }
 section.section--news.section--news--investigations .section__header .section__bar .section__bar__text {
   background-color: #173a4e;
@@ -4389,15 +4425,6 @@ section.section--column .section__column {
   padding: 0;
   transition: 0.3s;
 }
-section.section--column .section__column:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #bcbcbb;
-}
 section.section--column .section__column .section__icon {
   position: relative;
 }
@@ -4420,6 +4447,7 @@ section.section--column .section__column .section__icon img {
 }
 section.section--column .section__column .section__body {
   padding: 20px;
+  border-bottom: 1px solid #bcbcbb;
 }
 section.section--column .section__column .section__body .section__title {
   font-size: 20px;

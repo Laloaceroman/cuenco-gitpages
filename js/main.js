@@ -38,7 +38,21 @@ app.bg = {
 };
 
 app.common = {
-  init: function() {}
+  init: function() {
+    return $(".section--news--home .section__bar__options .section__bar__option").click(function() {
+      if ($(this).index() === 0) {
+        $(".section--news--home .section__news--1").addClass("current");
+        $(".section--news--home .section__news--2").removeClass("current");
+      } else {
+        if ($(this).index() === 2) {
+          $(".section--news--home .section__news--2").addClass("current");
+          $(".section--news--home .section__news--1").removeClass("current");
+        }
+      }
+      $(".section--news--home .section__bar__options .section__bar__option").removeClass("current");
+      return $(this).addClass("current");
+    });
+  }
 };
 
 app.faq = {
@@ -414,6 +428,27 @@ app.loader = {
   }
 };
 
+app.loadmore = {
+  init: function() {
+    return $("[data-open-loadmore]").click(function(e) {
+      var index;
+      e.preventDefault();
+      index = -1;
+      $(".loadmore").each(function() {
+        if ($(this).hasClass("loadmore--show")) {
+          return index = $(this).index();
+        }
+      });
+      index = index + 1;
+      if ($(".loadmore").eq(index).length === 1) {
+        return $(".loadmore").eq(index).addClass("loadmore--show");
+      } else {
+        return $(".section__loadmore").hide();
+      }
+    });
+  }
+};
+
 app.modal = {
   init: function() {
     $("[data-modal-newsletter]").click(function(e) {
@@ -609,9 +644,10 @@ app.swiper = {
         dynamicBullets: true
       },
       autoplay: {
-        delay: 3000,
+        delay: 6000,
         disableOnInteraction: false
       },
+      speed: 1300,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -625,12 +661,12 @@ app.swiper = {
         900: {
           slidesPerView: 2,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         },
         1400: {
           slidesPerView: 3,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         }
       }
     });
@@ -645,6 +681,7 @@ app.swiper = {
         delay: 3000,
         disableOnInteraction: false
       },
+      speed: 1300,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -658,12 +695,12 @@ app.swiper = {
         900: {
           slidesPerView: 2,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         },
         1400: {
           slidesPerView: 3,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         }
       }
     });
@@ -678,6 +715,7 @@ app.swiper = {
         delay: 3000,
         disableOnInteraction: false
       },
+      speed: 1300,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -711,6 +749,7 @@ app.swiper = {
         delay: 3000,
         disableOnInteraction: false
       },
+      speed: 1300,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
