@@ -1699,9 +1699,13 @@ article.article--new.article--new--big .article__body .article__title {
   }
 }
 article.article--new.article--new--big .article__body .article__description {
-  font-size: 24px;
-  line-height: 32px;
   opacity: 1;
+}
+@media (min-width: 720px) {
+  article.article--new.article--new--big .article__body .article__description {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 article.article--new.article--new--big .article__body .article__date {
   display: block;
@@ -1883,6 +1887,13 @@ article.article--testimony .article__body .article__title {
 }
 article.article--testimony .article__body .article__name {
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+article.article--testimony .article__body .article__position {
+  font-family: 'Montserrat', sans-serif;
+}
+article.article--testimony .article__body .article__company {
+  font-family: 'Montserrat', sans-serif;
 }
 article.article--mv {
   text-align: center;
@@ -2208,15 +2219,21 @@ footer .footer__wrap {
   }
 }
 footer .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 footer .footer__logo img {
-  width: 150px;
+  width: 250px;
   margin: initial;
 }
 footer .footer__header {
   padding-bottom: 40px;
   border-bottom: 1px solid #fff;
+}
+@media (min-width: 720px) {
+  footer .footer__header .footer__newsletter.footer__newsletter--right form {
+    float: right;
+    width: 100%;
+  }
 }
 footer .footer__header .footer__newsletter .footer__title {
   font-size: 24px;
@@ -2310,7 +2327,6 @@ footer .footer__features .footer__feature p {
 }
 footer .footer__body {
   padding: 40px 0;
-  margin-bottom: 40px;
   padding-bottom: 40px;
 }
 footer .footer__body .footer__socials {
@@ -2367,11 +2383,11 @@ footer .footer__footer .footer__logos .footer__logo img {
   width: initial;
   height: initial;
   max-width: 160px;
-  max-height: 100px;
+  max-height: 120px;
 }
 @media (min-width: 720px) {
   footer .footer__footer .footer__logos .footer__logo img {
-    max-width: 250px;
+    max-width: 180px;
   }
 }
 footer .footer__footer .footer__copyright p {
@@ -3405,6 +3421,7 @@ header.header--nav-out .header__nav__mobile .header__nav__nav {
   display: none;
   padding-top: 70px;
   transition: 0.5s;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (min-width: 720px) {
   .modal {
@@ -3428,9 +3445,6 @@ header.header--nav-out .header__nav__mobile .header__nav__nav {
 .modal.modal--out .modal__box {
   -webkit-animation: scaleFadeOut 1s ease both;
           animation: scaleFadeOut 1s ease both;
-}
-.modal .modal__icon {
-  margin-bottom: 20px;
 }
 .modal .modal__icon img {
   width: 80px;
@@ -3514,18 +3528,20 @@ header.header--nav-out .header__nav__mobile .header__nav__nav {
   max-width: 400px;
 }
 .modal .modal__content .modal__newsletter .modal__title {
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 28px;
   line-height: 36px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #bcbcbb;
 }
 @media (min-width: 720px) {
   .modal .modal__content .modal__newsletter .modal__title {
     padding-bottom: 40px;
     margin-bottom: 0;
   }
+}
+.modal .modal__content .modal__newsletter .modal__title span {
+  font-style: italic;
 }
 .modal .modal__content .modal__form .form {
   margin-top: 40px;
@@ -3592,7 +3608,7 @@ header.header--nav-out .header__nav__mobile .header__nav__nav {
   color: #38b6ff;
 }
 .modal .modal__content .modal__features {
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .modal .modal__content .modal__features .modal__feature {
   display: -ms-flexbox;
@@ -4348,6 +4364,10 @@ section.section--methodology .section__header .section__title {
   color: #38b6ff;
   text-transform: uppercase;
   margin-bottom: 40px;
+  font-weight: bold;
+}
+section.section--methodology .section__header .section__title strong {
+  display: block;
 }
 section.section--methodology .section__header .section__image img {
   max-height: 300px;
@@ -4480,6 +4500,12 @@ section.section--peoples .section__peoples {
 }
 section.section--peoples .section__footer {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+section.section--peoples .section__footer p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 section.section--stickytemario {
   overflow-y: scroll;
@@ -4561,6 +4587,9 @@ section.sectio--singlenew .section__wrap .section__infos {
       align-items: center;
   padding: 10px 20px;
 }
+section.sectio--singlenew .section__wrap .section__infos .section__info {
+  font-family: 'Montserrat', sans-serif;
+}
 section.sectio--singlenew .section__wrap .section__infos .section__info:first-child {
   padding-right: 10px;
   margin-right: 10px;
@@ -4587,6 +4616,9 @@ section.section--singlenewheader .section__body .section__content p {
   line-height: 32px;
   font-weight: 600;
 }
+section.section--singlenewheader .section__footer .section__author {
+  font-family: 'Montserrat', sans-serif;
+}
 section.section--singlenewheader .section__footer .section__author p {
   margin-bottom: 0;
   color: #bcbcbb;
@@ -4605,6 +4637,12 @@ section.section--singlenewheader .section__footer .section__author p strong {
   section.section--singlenewbody .section__content {
     padding-right: 20px;
   }
+}
+section.section--singlenewbody .section__content p:first-child::first-letter {
+  color: #38b6ff;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: bold;
 }
 @media (min-width: 720px) {
   section.section--singlenewbody .section__indice {
@@ -4633,6 +4671,7 @@ section.section--singlenewbody .section__indice .section__indice__body ul li a {
   color: #383838;
   opacity: 0.7;
   padding: 5px 0;
+  font-family: 'Montserrat', sans-serif;
 }
 section.section--singlenewbody .section__shares {
   margin-top: 40px;
@@ -5230,6 +5269,7 @@ section.section--singlenewbody .section__shares .section__share__logo a span {
   margin-bottom: 20px;
   color: #383838;
   text-align: justify;
+  font-family: 'Martel', serif;
 }
 @media (min-width: 720px) {
   .wp p {
@@ -5297,6 +5337,7 @@ section.section--singlenewbody .section__shares .section__share__logo a span {
 }
 .wp ul {
   margin: 10px 20px;
+  font-family: 'Martel', serif;
 }
 .wp ul li {
   margin-bottom: 10px;
@@ -5323,6 +5364,7 @@ section.section--singlenewbody .section__shares .section__share__logo a span {
   font-weight: 500;
   font-size: 16px;
   line-height: 36px;
+  font-family: 'Martel', serif;
 }
 .wp pre {
   background: rgba(0,0,0,0.05);

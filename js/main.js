@@ -729,12 +729,12 @@ app.swiper = {
         900: {
           slidesPerView: 2,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         },
         1400: {
           slidesPerView: 3,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         }
       }
     });
@@ -763,12 +763,12 @@ app.swiper = {
         900: {
           slidesPerView: 2,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         },
         1400: {
           slidesPerView: 3,
           spaceBetween: 40,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         }
       }
     });
