@@ -633,6 +633,59 @@ app.scroll = {
   }
 };
 
+app.shares = {
+  init: function() {
+    if (!app.isMobile()) {
+      $(".share-whatsapp").parents(".section__social__logo").remove();
+    }
+    return $(".share").click(function(e) {
+      e.preventDefault();
+      console.log("shares");
+      return app.shares.go($(this));
+    });
+  },
+  go: function(element) {
+    var share_text, share_url;
+    if (!share_url) {
+      share_url = encodeURIComponent(element.attr("href"));
+    }
+    share_text = encodeURIComponent($("h1").text());
+    if (element.attr("data-text")) {
+      share_text = encodeURIComponent(element.attr("data-text"));
+    }
+    if (element.is(".share-whatsapp")) {
+      window.location.href = "whatsapp://send?text=" + share_text + encodeURIComponent(" ") + share_url;
+    }
+    if (!app.isMobile()) {
+      if (element.is(".share-facebook")) {
+        app.shares.popup("https://www.facebook.com/sharer/sharer.php?u=" + share_url, 500, 310);
+      }
+      if (element.is(".share-twitter")) {
+        app.shares.popup("https://twitter.com/intent/tweet?source=webclient&text=" + share_text + "&url=" + share_url, 500, 310);
+      }
+      if (element.is(".share-linkedin")) {
+        return app.shares.popup("http://www.linkedin.com/shareArticle?mini=true&url=" + share_url, 500, 310);
+      }
+    } else {
+      if (element.is(".share-facebook")) {
+        window.open("https://www.facebook.com/sharer/sharer.php?u=" + share_url);
+      }
+      if (element.is(".share-twitter")) {
+        window.open("https://twitter.com/intent/tweet?source=webclient&text=" + share_text + "&url=" + share_url);
+      }
+      if (element.is(".share-linkedin")) {
+        return app.shares.popup("http://www.linkedin.com/shareArticle?mini=true&url=" + share_url);
+      }
+    }
+  },
+  popup: function(url, w, h) {
+    var left, top;
+    left = ($(window).width() / 2) - (w / 2);
+    top = ($(window).height() / 2) - (h / 2);
+    return window.open(url, "Compartir", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+  }
+};
+
 app.swiper = {
   init: function() {
     var swiper, swiper2, swiper3, swiper4;
