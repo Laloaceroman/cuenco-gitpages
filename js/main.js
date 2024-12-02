@@ -44,7 +44,7 @@ app.common = {
         $(".section--news--home .section__news--1").addClass("current");
         $(".section--news--home .section__news--2").removeClass("current");
       } else {
-        if ($(this).index() === 2) {
+        if ($(this).index() === 1) {
           $(".section--news--home .section__news--2").addClass("current");
           $(".section--news--home .section__news--1").removeClass("current");
         }
