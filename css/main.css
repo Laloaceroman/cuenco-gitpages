@@ -1969,10 +1969,16 @@ article.article--service {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  opacity: 0.5;
 }
-article.article--service:hover {
-  opacity: 1;
+@media (min-width: 720px) {
+  article.article--service {
+    opacity: 0.5;
+  }
+}
+@media (min-width: 720px) {
+  article.article--service:hover {
+    opacity: 1;
+  }
 }
 article.article--service:hover .article__body .article__button {
   opacity: 1;
@@ -2028,7 +2034,11 @@ article.article--service .article__body .article__flex {
 article.article--service .article__body .article__button {
   margin-top: 20px;
   text-align: right;
-  opacity: 0;
+}
+@media (min-width: 720px) {
+  article.article--service .article__body .article__button {
+    opacity: 0;
+  }
 }
 article.article--service .article__footer {
   position: relative;
@@ -2226,6 +2236,17 @@ aside .aside__wrap .aside__header {
 aside .aside__wrap .aside__header .aside__breadcrumb {
   margin-bottom: 40px;
   text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+aside .aside__wrap .aside__header .aside__breadcrumb .aside__icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+aside .aside__wrap .aside__header .aside__breadcrumb .aside__icon img {
+  width: 30px;
 }
 aside .aside__wrap .aside__header .aside__breadcrumb a {
   color: #bcbcbb;
@@ -3434,7 +3455,7 @@ header.header--static .header__logo.header__logo--white {
     content: "";
     transition: 0.3s;
     position: absolute;
-    bottom: -7px;
+    bottom: -10px;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -3874,6 +3895,17 @@ section .section__breadcrumb {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+section .section__breadcrumb .section__icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+section .section__breadcrumb .section__icon img {
+  width: 30px;
 }
 section .section__breadcrumb a {
   text-transform: initial;
