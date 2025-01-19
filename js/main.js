@@ -3630,7 +3630,7 @@ app.common = {
         return $("aside").addClass("aside--nav-in");
       }
     });
-    return $("aside .aside__close").click(function() {
+    $("aside .aside__close").click(function() {
       if (!$("aside").hasClass("aside--nav-out")) {
         $("aside").addClass("aside--nav-out");
         return setTimeout(function() {
@@ -3638,6 +3638,20 @@ app.common = {
           return $("aside").removeClass("aside--nav-in");
         }, 500);
       }
+    });
+    $(".btn--search").click(function(e) {
+      e.preventDefault();
+      $("header").addClass("header--search-in");
+      return setTimeout(function() {
+        return $(".header__search input").focus();
+      }, 100);
+    });
+    return $(".header__search input").blur(function() {
+      $("header").addClass("header--search-out");
+      $("header").removeClass("header--color");
+      return setTimeout(function() {
+        return $("header").removeClass("header--search-in header--search-out");
+      }, 400);
     });
   }
 };

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Cuenco</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=13846" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=13846" type="text/javascript"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__search">
+            <form action="search.html" method="get"><span class="fa fa-search"></span>
+              <input type="text" name="s" placeholder="Ingresa tu búsqueda">
+            </form>
+          </div>
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-cuenco.png"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__close">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__menu">
+                  <nav>
+                    <ul>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="publicaciones.html">Publicaciones</a></li>
+                      <li><a href="services.html">Servicios</a></li>
+                      <li><a href="aboutus.html">Nosotros</a></li>
+                      <li><a href="oportunidades.html">Oportunidades</a></li>
+                      <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__buttons"> 
+                <div class="header__button"> <a class="btn btn--min btn--search"><span class="fa fa-search"></span></a></div>
+              </div>
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="header__nav__mobile">
+              <div class="header__nav__opacity"> </div>
+              <div class="header__nav__nav"> 
+                <div class="header__nav__nav__header"> 
+                  <div class="header__nav__isotipo"> <img src="img/icons/logo-cuenco.png"></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__nav__back">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__nav__body">
+                  <div class="header__nav__nav__menu"> 
+                    <ul>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="publicaciones.html">Publicaciones</a></li>
+                      <li><a href="services.html">Servicios</a></li>
+                      <li><a href="aboutus.html">Nosotros</a></li>
+                      <li><a href="oportunidades.html">Oportunidades</a></li>
+                      <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header section--header--oportunidades">
+        <div class="section__wrap">
+          <div class="section__breadcrumb"><a href="index.html">Inicio<span class="fa fa-angle-right"></span></a><a href="publicaciones.html" class="current">Publicaciones</a></div>
+          <div class="section__header">
+            <h1 class="h3 section__title">Nam etiam ultrices erat quisque nisi volutpat ullamcorper bibendum nam aptent felis.
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="section--publicaciones"> 
+        <div class="section__wrap">
+          <div class="section__header">
+            <div class="section__filters">
+              <div class="cols">
+                <div class="col-xs-12 col-md-6">
+                  <div class="section__quicksearch">
+                    <div class="section__flex">
+                      <div class="form__element">
+                        <div class="form__input">
+                          <input type="text" name="name" placeholder="Búsqueda" class="quicksearch"><span class="fa fa-search"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="section__filter">
+                    <div class="form__element">
+                      <div data-filter-group="categories" class="form__input button-group selectors">
+                        <select class="order-select">
+                          <option selected disabled>Categorias</option>
+                          <option value="*">Todos</option>
+                          <option value=".1">Categoria 1</option>
+                          <option value=".2">Categoria 2</option>
+                          <option value=".3">Categoria 3</option>
+                          <option value=".4">Categoria 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                  <div class="section__filter">
+                    <div class="form__element">
+                      <div data-filter-group="state" class="form__input button-group selectors">
+                        <select class="order-select">
+                          <option selected disabled>Estado</option>
+                          <option value="*">Todos</option>
+                          <option value=".open">Abiertos</option>
+                          <option value=".close">Cerrados</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__body">
+            <div class="section__mainpost">
+              <article class="article--new article--new--big">
+                <div class="article__bg"> 
+                  <div class="bg"> <img src="img/uploads/7.jpeg"></div>
+                </div>
+                <div class="article__body"><span class="article__category">Innovación</span>
+                  <h3 class="article__title"><a href="single-new.html">SSR Chacayal anuncia nueva directiva: obtuvo más del 70% de los votos de la comunidad </a></h3><span class="article__date">15 • 07 • 2024</span>
+                </div>
+              </article>
+            </div>
+            <div class="cols grid--oportunidades">
+              <div class="col-xs-12 col-md-4 open 1">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Nullam pretium elit felis tempus ultricies quisque ut suspendisse arcu erat sodales.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 2">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Sodales neque viverra ultricies fringilla praesent malesuada lobortis enim molestie donec quisque.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 3">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Ornare vehicula porttitor praesent nullam magna viverra aenean class laoreet scelerisque cubilia.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 4">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Elit praesent diam tortor phasellus netus donec molestie arcu vel hac integer.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 4">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Dictum a sed phasellus lobortis aliquet magna nunc aliquam lobortis interdum proin.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 1">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Ut feugiat odio congue porta enim curabitur aenean rhoncus fringilla fames ac.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 2">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Lobortis non dictum non elementum mauris adipiscing at accumsan nunc faucibus faucibus.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 3">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Aliquam quam ac phasellus integer diam non curae mauris posuere suspendisse nulla.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 3">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Et curabitur convallis vehicula class tempus habitasse curabitur lobortis blandit habitant quam.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 1">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Suscipit habitant viverra augue etiam suspendisse nam accumsan id orci proin colus.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 2">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Commodo fermentum congue aenean taciti adipiscing non congue erat dictumst consectetur tempor.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 4">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Quisque volutpat donec fermentum convallis non pellentesque neque sem cursus pharetra aliquet.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 1">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Porttitor nibh cras ac donec lobortis elit ad curae pulvinar augue sociosqu.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 2">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Dapibus turpis dictum fermentum bibendum senectus at torquent etiam donec aliquam donec.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 3">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Himenaeos tincidunt diam risus pulvinar molestie conubia sem malesuada curae augue sociosqu.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 4">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">At facilisis nisi imperdiet phasellus senectus sodales sed elit pharetra scelerisque platea.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 4">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Non ac accumsan morbi egestas sodales fringilla ut sapien erat inceptos metus.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 1">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Neque eros tristique lobortis fames justo nullam porttitor odio quisque ullamcorper phasellus.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 2">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">At posuere rutrum aenean sed vivamus litora aenean dapibus praesent risus sagittis.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 3">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Lectus aenean etiam interdum viverra praesent pharetra mollis mollis convallis laoreet hendrerit.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 open 3">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Ullamcorper eu primis non lacus at eu hac phasellus bibendum neque laoreet.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 1">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Lectus aliquam porttitor litora euismod nisl tristique molestie aenean ultrices dictumst placerat.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 2">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Blandit potenti sociosqu quisque porta congue vulputate lectus a porttitor rhoncus fames.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 close 4">
+                <article class="article--new">
+                  <div class="article__bg"> 
+                    <div class="bg"> <img src="img/uploads/8.jpeg"></div>
+                  </div>
+                  <div class="article__body"><span class="article__category">Innovación</span>
+                    <h4 class="article__title"><a href="single-new.html">Quam arcu pretium cubilia interdum elementum lacus auctor quis rutrum maecenas maecenas.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal modal--newsletter">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close"></span></div>
+            <div class="modal__content"> 
+              <div class="cols">
+                <div class="modal__flex">
+                  <div class="col-md-7">
+                    <div class="modal__newsletter"> 
+                      <h4 class="modal__title">Suscríbete gratis al <span>newsletter</span> y recibe <strong>increíbles oportunidades</strong></h4>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="modal__features"> 
+                      <div class="modal__feature"> 
+                        <div class="modal__icon"> <img src="img/icons/icon-check-footer.svg"></div>
+                        <p>Oportunidades de financiamiento</p>
+                      </div>
+                      <div class="modal__feature"> 
+                        <div class="modal__icon"> <img src="img/icons/icon-check-footer.svg"></div>
+                        <p>Explicativos</p>
+                      </div>
+                      <div class="modal__feature"> 
+                        <div class="modal__icon"> <img src="img/icons/icon-check-footer.svg"></div>
+                        <p>Resumen semanal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="modal__form">
+                    <form class="form">
+                      <div class="form__element"> 
+                        <div class="form__input"> 
+                          <input type="text" placeholder="Ingrese su correo electrónico...">
+                          <div class="form__button"> 
+                            <button>Suscribírme</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrap">		
+        <div class="footer__body">
+          <div class="cols">
+            <div class="col-md-3">
+              <div class="footer__logo"> <img src="img/icons/logo-cuenco-white.png"></div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer__info">
+                <h4 class="footer__title">Enlaces de interés</h4><a href="#">Blog</a>
+                <p>Brochure</p>
+                <p>Preguntas Frecuentes</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer__info">
+                <h4 class="footer__title">Contacto</h4><a href="#">Aviso Legal</a><a href="#">Política de Cookies</a><a href="#">Política de Privacidad</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer__info">
+                <h4 class="footer__title">Contacto</h4><a href="#">hola@cuenco.cl</a><a href="#">+56 (9) 3037 3734</a><a href="#">Concepción, Chile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <div class="cols">
+            <div class="col-md-6">
+              <div class="footer__copyright">
+                <p>Copyright © Cuenco </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer__socials"> 
+                <div class="footer__social"> <a href="#"><img src="img/icons/icon-facebook-white.svg"></a></div>
+                <div class="footer__social"> <a href="#"><img src="img/icons/icon-instagram-white.svg"></a></div>
+                <div class="footer__social"> <a href="#"><img src="img/icons/icon-spotify-white.svg"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

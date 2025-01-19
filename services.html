@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=34746" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=34746" type="text/javascript"></script>
+    <link href="css/main.css?v=83199" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=83199" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -25,6 +25,11 @@
     <header>
       <div class="header__primary">
         <div class="header__wrap">
+          <div class="header__search">
+            <form action="search.html" method="get"><span class="fa fa-search"></span>
+              <input type="text" name="s" placeholder="Ingresa tu búsqueda">
+            </form>
+          </div>
           <div class="header__inner">
             <div class="header__logo"><a href="index.html"><img src="img/icons/logo-cuenco.png"></a></div>
             <div class="header__nav">
@@ -43,10 +48,11 @@
                   <nav>
                     <ul>
                       <li><a href="index.html">Inicio</a></li>
-                      <li><a href="recientes.html">Recientes</a></li>
+                      <li><a href="publicaciones.html">Publicaciones</a></li>
                       <li><a href="services.html">Servicios</a></li>
                       <li><a href="aboutus.html">Nosotros</a></li>
                       <li><a href="oportunidades.html">Oportunidades</a></li>
+                      <li><a href="contact.html">Contacto</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -54,7 +60,7 @@
             </div>
             <div class="header__right">
               <div class="header__buttons"> 
-                <div class="header__button"> <a href="#" class="btn btn--min"><span class="fa fa-search"></span></a></div>
+                <div class="header__button"> <a class="btn btn--min btn--search"><span class="fa fa-search"></span></a></div>
               </div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
@@ -79,10 +85,11 @@
                   <div class="header__nav__nav__menu"> 
                     <ul>
                       <li><a href="index.html">Inicio</a></li>
-                      <li><a href="recientes.html">Recientes</a></li>
+                      <li><a href="publicaciones.html">Publicaciones</a></li>
                       <li><a href="services.html">Servicios</a></li>
                       <li><a href="aboutus.html">Nosotros</a></li>
                       <li><a href="oportunidades.html">Oportunidades</a></li>
+                      <li><a href="contact.html">Contacto</a></li>
                     </ul>
                   </div>
                 </div>
@@ -190,97 +197,63 @@
           </div>
         </div>
       </section>
-      <section class="section--proyects">
+      <section class="section--text">
         <div class="section__wrap">
           <div class="section__header"> 
             <div class="cols">
-              <div class="col-md-6">
-                <div class="section__content">
-                  <h3 class="h1 section__title">Establecemos confianzas con una metodología propia </h3>
-                  <p>Nuestra metodología de 5 pasos, basada en la Comunicación Clara, Human Centered Design y datos ayuda a organizaciones de todo tipo a conectar soluciones de manera integral y sólida</p>
+              <div class="section__flex">
+                <div class="col-md-6">
+                  <div class="section__content">
+                    <h3 class="h2 section__title">Establecemos confianzas con una metodología propia </h3>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="section__numbers">
-                  <div class="cols">
-                    <div class="col-xs-4">
-                      <div class="section__number">
-                        <div class="section__number__circle"><span>01</span></div>
-                        <p>Señalar</p>
-                      </div>
-                    </div>
-                    <div class="col-xs-4">
-                      <div class="section__number">
-                        <div class="section__number__circle"><span>02</span></div>
-                        <p>Señalar</p>
-                      </div>
-                    </div>
-                    <div class="col-xs-4">
-                      <div class="section__number">
-                        <div class="section__number__circle"><span>03</span></div>
-                        <p>Señalar</p>
-                      </div>
-                    </div>
-                    <div class="col-xs-4">
-                      <div class="section__number">
-                        <div class="section__number__circle"><span>04</span></div>
-                        <p>Señalar</p>
-                      </div>
-                    </div>
-                    <div class="col-xs-4">
-                      <div class="section__number">
-                        <div class="section__number__circle"><span>05</span></div>
-                        <p>Señalar</p>
-                      </div>
-                    </div>
-                    <div class="col-xs-4">
-                      <div class="section__number">
-                        <div class="section__number__circle"><span>06</span></div>
-                        <p>Señalar</p>
-                      </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="section__text">
+                    <p>Nuestra metodología de 5 pasos, basada en la Comunicación Clara, Human Centered Design y datos ayuda a organizaciones de todo tipo a conectar soluciones de manera integral y sólida</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="section__body">
-            <div class="section__proyects">
-              <div class="section__proyects__header">
-                <h3 class="h4 section__title">Proyectos<span class="fa fa-angle-right"></span></h3>
-              </div>
-              <div class="section__proyects__body">
-                <div class="cols cols-gutter-2 cols-scroll">
-                  <div class="col-md-4">
-                    <article class="article--new">
-                      <div class="article__bg"> 
-                        <div class="bg"> <img src="img/uploads/image-proyect-1.jpeg"></div>
-                      </div>
-                      <div class="article__body"> <span class="article__category">Proyectos</span>
-                        <h4 class="article__title"><a href="single-new.html">Maecenas donec elementum ornare taciti donec eget velit</a></h4><span class="article__date">15 • 07 • 2024</span>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-md-4"> 
-                    <article class="article--new">
-                      <div class="article__bg"> 
-                        <div class="bg"> <img src="img/uploads/image-proyect-2.jpeg"></div>
-                      </div>
-                      <div class="article__body"> <span class="article__category">Proyectos</span>
-                        <h4 class="article__title"><a href="single-new.html">Sollicitudin venenatis curabitur varius pulvinar donec facilisis himenaeos</a></h4><span class="article__date">15 • 07 • 2024</span>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-md-4"> 
-                    <article class="article--new">
-                      <div class="article__bg"> 
-                        <div class="bg"> <img src="img/uploads/image-proyect-3.jpeg"></div>
-                      </div>
-                      <div class="article__body"> <span class="article__category">Proyectos</span>
-                        <h4 class="article__title"><a href="single-new.html">Class pretium per integer malesuada est imperdiet duis</a></h4><span class="article__date">15 • 07 • 2024	</span>
-                      </div>
-                    </article>
-                  </div>
+        </div>
+      </section>
+      <section class="section--proyects">
+        <div class="section__wrap section__wrap--sm">
+          <div class="section__header"> 
+            <h3 class="h4 section__title">Proyectos<span class="fa fa-angle-right"></span></h3>
+          </div>
+          <div class="section__body"> 
+            <div class="section__columns">
+              <div class="cols cols-gutter-2 cols-scroll">
+                <div class="col-md-4">
+                  <article class="article--new">
+                    <div class="article__bg"> 
+                      <div class="bg"> <img src="img/uploads/11.jpeg"></div>
+                    </div>
+                    <div class="article__body"> <span class="article__category">Proyectos</span>
+                      <h4 class="article__title"><a href="single-new.html">Eu elementum porttitor praesent pretium donec vivamus malesuada leo rhoncus augue laoreet.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="article--new">
+                    <div class="article__bg"> 
+                      <div class="bg"> <img src="img/uploads/11.jpeg"></div>
+                    </div>
+                    <div class="article__body"> <span class="article__category">Proyectos</span>
+                      <h4 class="article__title"><a href="single-new.html">Tristique gravida fringilla libero sed pulvinar sagittis dui augue augue aliquet curabitur.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="article--new">
+                    <div class="article__bg"> 
+                      <div class="bg"> <img src="img/uploads/11.jpeg"></div>
+                    </div>
+                    <div class="article__body"> <span class="article__category">Proyectos</span>
+                      <h4 class="article__title"><a href="single-new.html">Accumsan egestas congue pretium sagittis laoreet porta suspendisse metus felis convallis praesent.</a></h4><span class="article__date">15 • 07 • 2024</span>
+                    </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -290,24 +263,24 @@
           </div>
         </div>
       </section>
-      <section class="section--partners section--dark">
+      <section class="section--partners">
         <div class="section__wrap section__wrap--sm">
           <div class="section__header"> 
             <h3 class="h4 section__title">Apoyados por:<span class="fa fa-angle-right"></span></h3>
           </div>
           <div class="section__body">
-            <div class="cols">
+            <div class="cols cols-scroll">
               <div class="col-md-3">
-                <div class="section__logo"><img src="img/icons/logo-google-white.png"></div>
+                <div class="section__logo"><img src="img/icons/logo-google.png"></div>
               </div>
               <div class="col-md-3">
-                <div class="section__logo"><img src="img/icons/logo-google-white.png"></div>
+                <div class="section__logo"><img src="img/icons/logo-google.png"></div>
               </div>
               <div class="col-md-3">
-                <div class="section__logo"><img src="img/icons/logo-google-white.png"></div>
+                <div class="section__logo"><img src="img/icons/logo-google.png"></div>
               </div>
               <div class="col-md-3">
-                <div class="section__logo"><img src="img/icons/logo-google-white.png"></div>
+                <div class="section__logo"><img src="img/icons/logo-google.png"></div>
               </div>
             </div>
           </div>
@@ -332,9 +305,9 @@
                 <h4 class="faq__question"><span class="fa fa-angle-down"></span>Quiero plantear una idea. ¿Cómo puedo hacerlo?</h4>
                 <div class="faq__answer">
                   <div class="section__content">
-                    <p>Egestas lacus rhoncus nisl sollicitudin dictumst quam eleifend curabitur leo. Egestas cursus libero iaculis quam orci varius nisl tristique justo dictumst iaculis ultrices nec eu.
+                    <p>Hendrerit lacus hendrerit nulla eu litora nisl quam donec malesuada. Quisque condimentum purus interdum phasellus netus pulvinar luctus enim gravida senectus proin proin posuere integer.
                     </p>
-                    <p>Platea curabitur litora tellus aliquam mauris justo elit habitant dictum. Suscipit elementum proin gravida himenaeos non varius ut tristique duis fames augue tellus fermentum sagittis.
+                    <p>Torquent aenean suspendisse mattis eleifend felis commodo ac ante ut. Torquent dictum nam sociosqu consectetur maecenas nibh libero hendrerit duis facilisis tristique torquent facilisis netus.
                     </p>
                   </div>
                 </div>
@@ -343,9 +316,9 @@
                 <h4 class="faq__question"><span class="fa fa-angle-down"></span>Quiero plantear una idea. ¿Cómo puedo hacerlo?</h4>
                 <div class="faq__answer">
                   <div class="section__content">
-                    <p>Et libero rhoncus commodo vitae donec congue tempor lobortis aliquam. Fringilla sollicitudin aenean curabitur commodo vulputate donec est lobortis molestie sapien habitant himenaeos senectus massa.
+                    <p>Diam semper pellentesque eget lectus quam elementum sollicitudin consectetur fermentum. Accumsan mattis in consectetur consequat maecenas a egestas tellus est curabitur viverra ullamcorper iaculis tristique.
                     </p>
-                    <p>Laoreet pellentesque lobortis eros class rhoncus arcu mattis in vivamus. Netus sapien conubia nunc nibh cubilia enim curae vel nisl cursus mi laoreet phasellus bibendum.
+                    <p>Aliquam suscipit hendrerit ullamcorper curabitur vehicula lobortis lacinia nisi aptent. Viverra elementum tristique ultrices fermentum justo senectus donec tempor bibendum dictumst platea consequat netus eleifend.
                     </p>
                   </div>
                 </div>
