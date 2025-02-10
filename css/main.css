@@ -1706,26 +1706,46 @@ article.article--new .article__body .article__date {
 article.article--new.article--new--big {
   padding: 0;
 }
+@media (min-width: 720px) {
+  article.article--new.article--new--big {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+}
 article.article--new.article--new--big .article__bg {
   position: absolute;
-  width: 100%;
+  top: 0;
+  left: 0;
   height: 100%;
+  width: 100%;
   background-color: #383838;
+}
+@media (min-width: 720px) {
+  article.article--new.article--new--big .article__bg {
+    width: 50%;
+  }
 }
 article.article--new.article--new--big .article__bg .bg {
   opacity: 0.6;
 }
 article.article--new.article--new--big .article__body {
+  z-index: 2;
+  color: #383838;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  z-index: 2;
   color: #fff;
 }
 @media (min-width: 720px) {
   article.article--new.article--new--big .article__body {
+    position: relative;
+    width: 50%;
     padding: 40px 51px;
+    color: #383838;
   }
 }
 article.article--new.article--new--big .article__body .article__title {
@@ -1748,6 +1768,11 @@ article.article--new.article--new--big .article__body .article__title {
 }
 article.article--new.article--new--big .article__body .article__title a {
   color: #fff;
+}
+@media (min-width: 720px) {
+  article.article--new.article--new--big .article__body .article__title a {
+    color: #383838;
+  }
 }
 article.article--new.article--new--big .article__body .article__description {
   opacity: 1;
@@ -4386,7 +4411,8 @@ section.section--main .section__wrap {
 }
 @media (min-width: 720px) {
   section.section--main .section__wrap {
-    height: 114vh;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 section.section--main .section__bg {
@@ -4419,7 +4445,7 @@ section.section--main .section__body .section__content {
 @media (min-width: 720px) {
   section.section--main .section__body .section__content {
     margin-bottom: 0px;
-    max-width: 60%;
+    max-width: 40%;
     text-align: left;
   }
 }
@@ -4533,6 +4559,7 @@ section.section--main .section__socials .section__social img {
 }
 @media (min-width: 720px) {
   section.section--columns .section__wrap {
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -4545,7 +4572,12 @@ section.section--columns .section__footer {
   }
 }
 section.section--proyects .section__footer {
-  text-align: right;
+  text-align: center;
+}
+@media (min-width: 720px) {
+  section.section--proyects .section__footer {
+    text-align: right;
+  }
 }
 @media (min-width: 720px) {
   section.section--podcast .section__wrap {
@@ -4623,6 +4655,9 @@ section.section--publicaciones .section__footer {
 section.section--partners {
   margin-bottom: 80px;
 }
+section.section--partners .section__wrap {
+  padding-top: 0;
+}
 section.section--partners .section__body {
   width: 100%;
 }
@@ -4643,10 +4678,16 @@ section.section--partners .section__body .section__logo img {
 section.section--news .section__header .section__bar {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+}
+@media (min-width: 720px) {
+  section.section--news .section__header .section__bar {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
 }
 section.section--news .section__header .section__bar .section__icon {
   margin-right: 20px;
@@ -4679,7 +4720,7 @@ section.section--news .section__header .section__bar .section__bar__options {
   border-radius: 50px;
   background-color: #f5f5f7;
   color: #bcbcbb;
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 section.section--news .section__header .section__bar .section__bar__options span {
   margin-right: 10px;
@@ -4706,13 +4747,13 @@ section.section--news .section__header .section__bar .section__bar__options .sec
   font-size: 14px;
   line-height: 20px;
   color: #383838;
-  font-weight: 900;
+  font-weight: bold;
   margin-bottom: 0;
   text-transform: capitalize;
 }
 @media (min-width: 720px) {
   section.section--news .section__header .section__bar .section__bar__options .section__bar__option p {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 18px;
     line-height: 24px;
   }
@@ -4725,7 +4766,12 @@ section.section--news .section__loadmore {
   text-align: center;
 }
 section.section--news .section__footer {
-  text-align: right;
+  text-align: center;
+}
+@media (min-width: 720px) {
+  section.section--news .section__footer {
+    text-align: right;
+  }
 }
 @media (min-width: 720px) {
   section.section--news.section--news--home .section__wrap {
@@ -4824,10 +4870,16 @@ section.section--faq .section__header .section__title strong {
 section.section--testimonies .section__header .section__bar {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+}
+@media (min-width: 720px) {
+  section.section--testimonies .section__header .section__bar {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
 }
 section.section--testimonies .section__header .section__bar .section__icon {
   margin-right: 20px;
@@ -5363,7 +5415,7 @@ section.section--singlenewbody .section__header .section__infos .section__social
   color: #383838;
 }
 section.section--singlenewbody .section__body {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 @media (min-width: 720px) {
   section.section--singlenewbody .section__body {
@@ -5802,6 +5854,11 @@ section.section--contact .section__footer {
   margin-top: 40px;
 }
 section.section--contact .section__footer .section__features .section__feature {
+  width: initial;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
   padding: 20px;
 }
 section.section--contact .section__footer .section__features .section__feature .section__title,
