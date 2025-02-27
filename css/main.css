@@ -5414,6 +5414,9 @@ section.section--singlenewbody .section__header .section__infos .section__social
 section.section--singlenewbody .section__header .section__infos .section__socials .section__social a {
   color: #383838;
 }
+section.section--singlenewbody .section__header .section__infos .section__socials .section__social img {
+  width: 25px;
+}
 section.section--singlenewbody .section__body {
   padding: 0 20px;
 }

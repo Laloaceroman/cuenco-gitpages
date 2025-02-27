@@ -4419,7 +4419,7 @@ app.scroll = {
 app.shares = {
   init: function() {
     if (!app.isMobile()) {
-      $(".share-whatsapp").parents(".section__social__logo").remove();
+      $(".share-whatsapp").parents(".section__social ").remove();
     }
     return $(".share").click(function(e) {
       e.preventDefault();
@@ -4443,8 +4443,8 @@ app.shares = {
       if (element.is(".share-facebook")) {
         app.shares.popup("https://www.facebook.com/sharer/sharer.php?u=" + share_url, 500, 310);
       }
-      if (element.is(".share-twitter")) {
-        app.shares.popup("https://twitter.com/intent/tweet?source=webclient&text=" + share_text + "&url=" + share_url, 500, 310);
+      if (element.is(".share-x")) {
+        app.shares.popup("https://x.com/intent/post?text=" + share_text + "&url=" + share_url, 500, 310);
       }
       if (element.is(".share-linkedin")) {
         return app.shares.popup("http://www.linkedin.com/shareArticle?mini=true&url=" + share_url, 500, 310);
@@ -4453,8 +4453,8 @@ app.shares = {
       if (element.is(".share-facebook")) {
         window.open("https://www.facebook.com/sharer/sharer.php?u=" + share_url);
       }
-      if (element.is(".share-twitter")) {
-        window.open("https://twitter.com/intent/tweet?source=webclient&text=" + share_text + "&url=" + share_url);
+      if (element.is(".share-x")) {
+        window.open("https://x.com/intent/post?text=" + share_text + "&url=" + share_url);
       }
       if (element.is(".share-linkedin")) {
         return app.shares.popup("http://www.linkedin.com/shareArticle?mini=true&url=" + share_url);
